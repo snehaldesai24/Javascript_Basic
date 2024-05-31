@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+      div{
+        text-align: center;
+        margin-top: 100px;
+        background-color: lightyellow;
+      }
+
+      button{
+        margin-right: 30px;
+        width:75px;
+        height:50px;
+      }
+    </style>
+    <script>
+     function changeToReact() {
+
+        var imageRef = document.getElementById("image");
+        imageRef.src = "https://miro.medium.com/v2/resize:fit:1400/0*y6IcBe5J1AdALzXw.png";
+
+
+     }
+
+     function changeToAngular() {
+        var imageRef = document.getElementById("image");
+        imageRef.src = "https://www.freecodecamp.org/news/content/images/2020/04/Copy-of-Copy-of-Travel-Photography.png";
+    
+}
+    </script>
+
+</head>
+<body>
+    <div >
+    <img id="image" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQTaIcGgneT7-XeJ_IJdyKHvxj8GKa1PWVbyQ&s"  width="600" height="450" />
+    <br /><br />
+    <button onclick="changeToReact()">React</button>
+    <button onclick="changeToAngular()">Angular</button>
+    </div>
+</body>
+
+</html>

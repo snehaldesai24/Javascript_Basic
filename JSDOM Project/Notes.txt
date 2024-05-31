@@ -1,0 +1,6 @@
+EventClick.html file:
+            <input type="text" placeholder="Enter Data" onkeydown="fnInput()" />
+            <input type="text" placeholder="Enter Data" onblur="fnInput()" />
+            <h3></h3>
+   
+//when ever your input elemet is not focuse then use the "onblur" or we can use onkeydown.

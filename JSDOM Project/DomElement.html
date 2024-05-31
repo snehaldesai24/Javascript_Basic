@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        .myclass{
+            color: blue;
+        }
+
+        .newclass{
+            color: blueviolet;
+        }
+        #para{
+            color: lightcoral; 
+        }
+
+        #root{
+            color: rgb(123, 6, 6);  
+        }
+
+    </style>
+    <script>
+     function changeFormat(){
+
+        //Logic to access h2 ,p, button Dom element
+        var h2DomElement = document.getElementById("test");
+        var buttonchange = document.getElementById("root");
+        var pchange = document.getElementById("para");
+
+        //access content in betn opening and closing tag
+        var h2content = h2DomElement.innerText;
+        console.log(h2content);
+        
+        //Update DomElement content
+        h2DomElement.innerText = "Welcome to React!!";
+        pchange.innerText = "React is a free and open-source front-end JavaScript library for building user interfaces based on components. It is maintained by Meta and a community of individual developers and companies. React can be used to develop single-page, mobile, or server-rendered applications with frameworks like Next.js.";
+        buttonchange.innerText = "React";  
+        
+        //Accessing Value of id and class---css change
+        var idValue = h2DomElement.id;
+        var classNameValue = h2DomElement.className;
+        console.log(idValue, classNameValue);
+       
+        //Adding newclass to h2---css change
+        h2DomElement.classList.add("newclass");
+     }
+    </script>
+
+</head>
+<body>
+    <h2 id="test" class="myclass oldclass">Welcome to Javascript!!!</h2> 
+    <p id="para">JavaScript, often abbreviated as JS, is a programming language and core technology of the Web, alongside HTML and CSS. 99% of websites use JavaScript on the client side for webpage behavior. Web browsers have a dedicated JavaScript engine that executes the client code.</p>
+    <button id="root" onclick="changeFormat()">Javascript</button>
+</body>
+
+</html>

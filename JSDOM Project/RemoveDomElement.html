@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+            function removeImage(){
+                //Remove the image using remove.
+                var imageDomElement = document.querySelector("img");
+                imageDomElement.remove();
+
+            }
+        </script>
+
+
+    </head>
+    <body>
+        <div>
+            <h2>Welcome To Desert</h2>
+            <img src="https://images.trvl-media.com/lodging/28000000/27660000/27650200/27650187/2d5c5ebc.jpg?impolicy=resizecrop&rw=575&rh=575&ra=fill" width="500"
+            height="300" />
+            <p>Morpheus, a character in The Matrix, quotes Baudrillard when he says “Welcome to the desert of the real”. This phrase refers to a cultural space where hyperreality doesn't refer to the real solid world but to the virtual world.</p>
+            <input type="radio" name="image" checked />Add Image
+            <input type="radio" name="image" onchange="removeImage()" />Remove Image
+        </div>
+    </body>
+</html>

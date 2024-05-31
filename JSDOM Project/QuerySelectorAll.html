@@ -1,0 +1,63 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+    .container {
+        padding: 30px;
+        width: 500px;
+        margin: 100px auto;
+        box-shadow: 0px 0px 10px rgb(0, 255, 119);
+    }
+    .container h2{
+        color: #bada08;
+    }
+
+    .newcontainer {
+        padding: 30px;
+        width: 800px;
+        margin: 100px auto;
+        box-shadow: 10px 0px 10px rgb(81, 51, 232);
+    }
+    .newcontainer h2{
+        color: #f027df;
+    }
+
+    </style>
+    <script>
+        function fnquerySelectorAll(){
+            
+            //using queryselectorall we can add tagname,classname,id value and it always retune a array.
+
+            var divCollection = document.querySelectorAll(".container");//using class
+        //    var divCollection = document.querySelectorAll("#fdiv");//using id
+         //   var divCollection = document.querySelectorAll("div");//using tagname
+
+            var divDomElement = divCollection[1];  //accessing 2nd dom element in class
+        //    var divDomElement = divCollection[0];  //accessing 1st dom element in id
+        //    var divDomElement = divCollection[1]; //accessing 2nd dom element in tagname
+
+            divDomElement.classList.remove("container");
+            divDomElement.classList.add("newcontainer");
+
+            
+        }
+     
+    </script>
+
+</head>
+<body>
+    <div id ="fdiv" class="container" name="firstdiv">
+    <h2 name="firsth2" id="title">Query Selector</h2> 
+    <p>A paragraph is a self-contained unit of discourse in writing dealing with a particular point or idea. Though not required by the orthographic conventions of any language with a writing system, paragraphs are a conventional means of organizing extended segments of prose.</p>
+    <button onclick="fnquerySelectorAll()">Remove Class</button>
+    </div>
+
+    <div class="container" >
+        <p>A paragraph is a self-contained unit of discourse in writing dealing with a particular point or idea. Though not required by the orthographic conventions of any language with a writing system, paragraphs are a conventional means of organizing extended segments of prose.</p>
+        <button onclick="fnquerySelectorAll()">Class</button>
+        </div>
+</body>
+
+</html>
+

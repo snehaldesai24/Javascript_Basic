@@ -1,0 +1,50 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+    .container {
+        padding: 30px;
+        width: 500px;
+        margin: 100px auto;
+        box-shadow: 10px 20px 10px blue;
+    }
+    .container h2{
+        color: rgb(2, 55, 55);
+    }
+
+    </style>
+    <script>
+        function fnremoveClassName(){
+
+            //How to remove the class from dom element.
+            var removeDomElement = document.getElementById('container'); 
+            removeDomElement.classList.remove('container');  
+
+           //change the content of h2 element usinginnerText property.
+           //using inner.Text property we cant use html tags.
+            var h2DomElement = document.getElementById("title");
+            h2DomElement.innerText = "Successfully Removed the class using the dom element";
+
+            //change the content of h2 element using innerHTML property
+            //using the innerHtml property we can able to use html tags
+    //        h2DomElement.innerHTML = "<i>Successfully Removed the class using the classlist.remove</i>";
+
+           //another proprty is there to change h2 content - textContent
+    //        h2DomElement.textContent = "Class Removed Successfully finally.";
+
+        }
+     
+    </script>
+
+</head>
+<body>
+    <div class="container" id="container">
+    <h2  id="title">Remove ClassName</h2> 
+    <p>A paragraph is a self-contained unit of discourse in writing dealing with a particular point or idea. Though not required by the orthographic conventions of any language with a writing system, paragraphs are a conventional means of organizing extended segments of prose.</p>
+    <button onclick="fnremoveClassName()">Remove Class</button>
+    </div>
+</body>
+
+</html>
+

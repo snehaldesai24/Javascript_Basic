@@ -1,0 +1,56 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+    .container {
+        padding: 30px;
+        width: 500px;
+        margin: 100px auto;
+        box-shadow: 0px 0px 10px rgb(0, 255, 119);
+    }
+    .container h2{
+        color: #bada08;
+    }
+
+    .newcontainer {
+        padding: 30px;
+        width: 800px;
+        margin: 100px auto;
+        box-shadow: 10px 0px 10px rgb(81, 51, 232);
+    }
+    .newcontainer h2{
+        color: #f027df;
+    }
+
+    </style>
+    <script>
+        function fnclassName(){
+            //access Dom element using the className simillar to tagname.
+            var divCollection = document.getElementsByClassName("container");
+             //return a array becu we have more than 1 div is available so thats why its retune in array.
+
+            var firstDivDomElement = divCollection[0];
+            firstDivDomElement.classList.remove("container");//remove existing class
+            firstDivDomElement.classList.add("newcontainer");//add new class.
+
+        }
+     
+    </script>
+
+</head>
+<body>
+    <div class="container" >
+    <h2  id="title">Class Selector</h2> 
+    <p>A paragraph is a self-contained unit of discourse in writing dealing with a particular point or idea. Though not required by the orthographic conventions of any language with a writing system, paragraphs are a conventional means of organizing extended segments of prose.</p>
+    <button onclick="fnclassName()">Remove Class</button>
+    </div>
+
+    <div class="container" >
+        <p>A paragraph is a self-contained unit of discourse in writing dealing with a particular point or idea. Though not required by the orthographic conventions of any language with a writing system, paragraphs are a conventional means of organizing extended segments of prose.</p>
+        <button onclick="fnclassName()">Class</button>
+        </div>
+</body>
+
+</html>
+
