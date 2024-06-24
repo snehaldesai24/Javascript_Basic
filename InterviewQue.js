@@ -6,7 +6,7 @@ var userobj={
 console.log("----------------------------------------------------------");
 
 
-//interview quetion-2nd last element for the array.
+//interview quetions-2nd last element for the array.
 let arr = ["a", "b", "c", "d", "e","f"];
 console.log(arr[arr.length-2]);   //o/p=e 
 console.log("----------------------------------------------------------");
@@ -23,7 +23,7 @@ var Output =(function()
 console.log(Output);
 console.log("----------------------------------------------------------");
 
-//interview que 
+//interview questions 
  console.log(foo());
  function foo(){
      return "hello world";
